@@ -7,7 +7,8 @@ pipeline {
     stage('Test') {
       steps {
         withSonarQubeEnv(installationName: 'sq1') {
-        sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:10.3.0.82913:sonar'
+        #sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:10.3.0.82913:sonar'
+        sh './mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install  '
         
         }
       }
