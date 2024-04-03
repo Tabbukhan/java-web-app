@@ -61,7 +61,7 @@
                                 <artifactId>sonar-maven-plugin</artifactId>
                                 <version>10.3.0.82913</version>
                                 <configuration>
-                                     <skip>true</skip>
+                                     <skip>false</skip>
                                 </configuration>
                         </plugin>
 		</plugins>
