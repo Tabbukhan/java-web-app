@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class DemoApplication {
-
+	String username="user";
+	int password=123456;
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
