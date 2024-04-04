@@ -12,6 +12,8 @@ public class DemoApplication {
 	int password=123456;
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		System.out.println("Username: " + username);
+                System.out.println("Password: " + password);
 	}
 	public String m1(){
 		return home("this is my home");
